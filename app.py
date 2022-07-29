@@ -5,7 +5,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
-model = pickle.load(open('./models/RandomForest.pkl', 'rb'))
+model = pickle.load(open('./models/MultinomialNB.pkl', 'rb'))
 CountVectorizer = pickle.load(open('./models/CountVectorizer.pkl', 'rb'))
 
 def data_cleaning(text):
